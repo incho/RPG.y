@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body onload="start(3)" id="batlle">
+
+
+	<!-- 勇者 -->
+	<div id="yuusyaCss">
+		<div id="yuusyaWhite">
+			<p>現在のお金<span id="money">0</span>G</p>
+			<p>HP</p>
+			<progress max="200" value="200" id="proHP"></progress>
+			<span id="HP">200</span>
+			<br>
+			<p>MP</p>
+			<progress max="100" value="100" id="proMP"></progress>
+			<span id="MP">100</span>
+			<br>
+		</div>
+		<img src="img/勇者.png">
+	</div>
+
+	<!-- テキストボックス -->
+	<input type="text" name="kougeki" placeholder="攻撃" id="textbox" onkeypress="atackent(event.keyCode)">
+
+
+	<!-- 敵 -->
+	<div id="tekiCss">
+		<div id="tekiWhite">
+			<p>HP</p>
+			<progress max="100" value="100" id="proTeki"></progress>
+			<br>
+		</div>
+		<img src="" id="level">
+	</div>
+
+	<!-- 操作ボタン -->
+	<div id="operationCss">
+		<button onclick="atack()">攻撃</button>
+		<button onclick="healPortion()">体力回復(<span id="healNumber">0</span>)</button>
+		<button onclick="magicPortion()">魔力回復(<span id="magicNumber">0</span>)</button>
+		<button onclick="magic()">魔法</button>
+		<button onclick="escape()">逃げる</button>
+	</div>
+
+	<!-- 技名ボタン -->
+	<div id="typeCss">
+		<button onclick="fire()">火</button>
+		<button onclick="water()">水</button>
+		<button onclick="ice()">氷</button>
+		<button onclick="electrical()">電気</button>
+	</div>
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

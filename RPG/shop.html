@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body onload="shopStart()" id="shopping">
+<h1>道具</h1>
+
+<button class="shop" onclick="buyHeal()">【50G】回復ポーション(<span id="healNumber">0</span>)</button>
+<br>
+<button class="shop" onclick="buyMagic()">【75G】魔法ポーション(<span id="magicNumber">0</span>)</button>
+<br>
+<button class="shop" onclick="buyHP()">【100G】体力UP</button>
+<br>
+<button class="shop" onclick="buyAtack()">【200G】攻撃力UP</button>
+<br>
+<button class="shop" onclick="buyMP()">【300G】魔力UP</button>
+<br>
+
+<p>現在のお金<span id="shopMoney">0</span>G</p>
+
+<button onclick="back()">戻る</button>
+	
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -4,9 +4,20 @@
 	<meta charset="utf-8">
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body onload="home()" id="main">
 
+	<div id="top">
+		<br>
+		<br>
+		<button onclick="level1()">Level１</button>
+		<button onclick="level2()">Level２</button>
+		<button onclick="level3()">Level３</button>
+		<button onclick="shop()">ショップ</button>
+
+		<p>現在のお金<span id="homeMoney">0</span>G</p>
 	
+		<button onclick="reset()">リセット</button>
+	</div>
 
 <script type="text/javascript" src="js/main.js"></script>
 </body>
